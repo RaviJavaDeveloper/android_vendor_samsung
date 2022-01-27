@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/sm8250-common
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/sm8250-common/proprietary/system/bin/scs:$(TARGET_COPY_OUT_SYSTEM)/bin/scs \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libaptXHD_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptXHD_encoder.so \
     vendor/samsung/sm8250-common/proprietary/system/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaptX_encoder.so \
@@ -255,6 +256,26 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_EA8079B_AMS646YB01_FHD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_EA8079B_AMS646YB01_FHD.xml \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD01_FHD.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD01_FHD.xml \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/fd/fast_face_detect_model_full_angle_16_CHAR.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/fd/fast_face_detect_model_full_angle_16_CHAR.dat \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/gae/MeanFea.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/MeanFea.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/gae/ParaFea.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/ParaFea.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/gae/PmAgeFeatSelIdx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmAgeFeatSelIdx.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/gae/PmAgeModel.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmAgeModel.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/gae/PmExpFeatSelIdx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmExpFeatSelIdx.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/gae/PmExpModel.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmExpModel.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/gae/PmGenModel.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmGenModel.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/gae/PmGenderFeatSelIdx.bin:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/gae/PmGenderFeatSelIdx.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.dlc \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.info \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.dlc \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_detector/aic_detector_cnn.info \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/image_understanding/db/aic_g_o_detector/aic_g_o_detector_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_g_o_detector/aic_g_o_detector_cnn.dlc \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/image_understanding/db/aic_g_o_detector/aic_g_o_detector_cnn.info:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/image_understanding/db/aic_g_o_detector/aic_g_o_detector_cnn.info \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/ld/avg_hog_13pt.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/avg_hog_13pt.dat \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/ld/avg_hog_35pt.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/avg_hog_35pt.dat \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/ld/mean_35pt.txt:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/mean_35pt.txt \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/ld/regress_matrix_short_13pt.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/regress_matrix_short_13pt.dat \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/saiv/ld/regress_matrix_short_35pt.dat:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/ld/regress_matrix_short_35pt.dat \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/seccomp_policy/mediaextractor_sec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor_sec.policy \
@@ -844,6 +865,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libBeauty_v4.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBeauty_v4.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/libDLInterface.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDLInterface.camera.samsung.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libDVTracking_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDVTracking_interface.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libDepthBokehVideo_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDepthBokehVideo_interface.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/libDualCamBokehCapture.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDualCamBokehCapture.camera.samsung.so \
@@ -1334,7 +1356,35 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi@2.0.so \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi@2.1.so \
-    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi@2.2.so
+    vendor/samsung/sm8250-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi@2.2.so \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/aisolution_1.0/SWISPNet_v-timestamp:$(TARGET_COPY_OUT_VENDOR)/saiv/aisolution_1.0/SWISPNet_v-timestamp \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/aisolution_1.0/model_20210204_1792_1920_w_h.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/aisolution_1.0/model_20210204_1792_1920_w_h.pb \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/moon_verifier/moon_verifier_cnn.info:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/moon_verifier/moon_verifier_cnn.info \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/moon_verifier/moon_verifier_cnn.prototxt:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/moon_verifier/moon_verifier_cnn.prototxt \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/moon_verifier/moon_verifier_cnn_light.caffemodel:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/moon_verifier/moon_verifier_cnn_light.caffemodel \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/slens_classifier/slens_classifier_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/slens_classifier/slens_classifier_cnn.dlc \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/slens_detector/slens_detector_cnn.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/slens_detector/slens_detector_cnn.dlc \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/smartscan_verifier/document_verifier_cnn.tflite:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/smartscan_verifier/document_verifier_cnn.tflite \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tf:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/srr_interaction/srr_interaction_cnn.tf \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/mpi_model/009/B2BSFNet.caffemodel:$(TARGET_COPY_OUT_VENDOR)/saiv/mpi_model/009/B2BSFNet.caffemodel \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/mpi_model/009/B2BSFNet.prototxt:$(TARGET_COPY_OUT_VENDOR)/saiv/mpi_model/009/B2BSFNet.prototxt \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/mpi_model/1000/B2BSFNet.caffemodel:$(TARGET_COPY_OUT_VENDOR)/saiv/mpi_model/1000/B2BSFNet.caffemodel \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/mpi_model/1000/B2BSFNet.prototxt:$(TARGET_COPY_OUT_VENDOR)/saiv/mpi_model/1000/B2BSFNet.prototxt \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/mpi_model/999/B2BSFNet.caffemodel:$(TARGET_COPY_OUT_VENDOR)/saiv/mpi_model/999/B2BSFNet.caffemodel \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/mpi_model/999/B2BSFNet.prototxt:$(TARGET_COPY_OUT_VENDOR)/saiv/mpi_model/999/B2BSFNet.prototxt \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/mpi_model/B2BSFNet-timestamp:$(TARGET_COPY_OUT_VENDOR)/saiv/mpi_model/B2BSFNet-timestamp \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/personal_1.0/mobilenet_v2_srcb_human_parsing_v6_256_d32_69526_q.dlc:$(TARGET_COPY_OUT_VENDOR)/saiv/personal_1.0/mobilenet_v2_srcb_human_parsing_v6_256_d32_69526_q.dlc \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/srDeblur/db/TextureRedrawing_1202.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/srDeblur/db/TextureRedrawing_1202.pb \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/srDeblur/db/V10.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/srDeblur/db/V10.pb \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/srDeblur/db/enc1_1_3_3_5_exp.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/srDeblur/db/enc1_1_3_3_5_exp.pb \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/swisp_1.0/db/SWISPNet-timestamp:$(TARGET_COPY_OUT_VENDOR)/saiv/swisp_1.0/db/SWISPNet-timestamp \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/swisp_1.0/db/denoise_model_e183_832x1072x4_0810.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/swisp_1.0/db/denoise_model_e183_832x1072x4_0810.pb \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/swisp_1.0/db/denoise_model_e427_816x1056.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/swisp_1.0/db/denoise_model_e427_816x1056.pb \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/swisp_1.0/db/denoise_model_e568_1x800x720x4_CNR2.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/swisp_1.0/db/denoise_model_e568_1x800x720x4_CNR2.pb \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/swisp_1.0/db/denoise_model_e568_1x816x1056x4_CNR2.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/swisp_1.0/db/denoise_model_e568_1x816x1056x4_CNR2.pb \
+    vendor/samsung/sm8250-common/proprietary/vendor/saiv/swisp_1.0/db/denoise_model_e568_832x1072x4.pb:$(TARGET_COPY_OUT_VENDOR)/saiv/swisp_1.0/db/denoise_model_e568_832x1072x4.pb
 
 PRODUCT_PACKAGES += \
     libfastcvopt \
